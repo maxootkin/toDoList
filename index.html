@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Mina" rel="stylesheet">	
+	<title>To Do List</title>
+</head>
+<body>
+	<p class="capiton-main">To Do List</p>
+	<div class="main">
+		<form class="data-main" name="forms">			
+			<label>Day of week:</label>
+			<select name="week">
+				<option value="Monday">Monday</option>
+				<option value="Tuesday">Tuesday</option>
+				<option value="Wednesday">Wednesday</option>
+				<option value="Thursday">Thursday</option>
+				<option value="Friday">Friday</option>
+				<option value="Saturday">Saturday</option>
+				<option value="Sunday">Sunday</option>
+			</select><br>					
+			<textarea name="event" id="comment" cols="30" rows="10" placeholder="Enter your notes..."></textarea>
+			<div class="buttons">
+				<input type="button" value="Save" onclick="btnSave();">
+				<input type="button" value="Print" onclick="btnPrint();">
+			</div>			
+		</form>			
+	</div>
+	<div id="output"></div>
+	<script src="script.js"></script>
+</body>
+</html>
